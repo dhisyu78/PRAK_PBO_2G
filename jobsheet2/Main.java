@@ -2,10 +2,16 @@ package jobsheet2;
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle r = new Rectangle();
-        r.width = 6;
-        r.height = 4;
+        Rectangle[] shapes = new Rectangle[3];
+        shapes[0] = new Rectangle(6, 4);
+        shapes[1] = new Rectangle(3, 3);
+        shapes[2] = new Rectangle(8, 2);
 
-        System.out.println("Rectangle " + r.width + "x" + r.height);
+        for (Rectangle r : shapes) {
+            System.out.println("Area: " + r.area() + ", Perimeter: " + r.perimeter());
+        }
+
+        Student s = new Student("Nadia", "S001", 3.8);
+        System.out.println(s.describe());
     }
 }
