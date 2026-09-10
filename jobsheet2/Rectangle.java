@@ -5,15 +5,14 @@ public class Rectangle {
     int height;
 
     Rectangle(int width, int height) {
-        this.width = width;
-        this.height = height;
+        this.width=width;
+        this.height=height;
     }
-
-    int area() {
+    int area(){
         return width * height;
     }
 
-    int perimeter() {
+    int perimeter(){
         return 2 * (width + height);
     }
 }

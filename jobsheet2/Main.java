@@ -8,10 +8,10 @@ public class Main {
         shapes[2] = new Rectangle(8, 2);
 
         for (Rectangle r : shapes) {
-            System.out.println("Area: " + r.area() + ", Perimeter: " + r.perimeter());
+            System.out.println("Area: " + r.area() + ", Perimeter: " + r.perimeter() );
         }
 
-        Student s = new Student("Nadia", "S001", 3.8);
+        Student s = new Student("Nadia", "S001", 3.8 );
         System.out.println(s.describe());
     }
 }
