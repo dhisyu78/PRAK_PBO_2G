@@ -4,7 +4,18 @@ public class MotorDemo {
     public static void main(String[] args) {
         Motor motor = new Motor();
         motor.printStatus();
-        motor.kontakOn = 50;
+        motor.tambahKecepatan();
+        
+        motor.nyalakanMesin();
+        motor.printStatus();
+
+        motor.tambahKecepatan();
+        motor.printStatus();
+
+        motor.tambahKecepatan();
+        motor.printStatus();
+
+        motor.matikanMesin();
         motor.printStatus();
     }
 }
