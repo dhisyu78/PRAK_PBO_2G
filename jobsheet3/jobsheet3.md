@@ -42,7 +42,7 @@ Output
 <img width="342" height="126" alt="image" src="https://github.com/user-attachments/assets/144cec13-92e3-48bc-b2b5-0f2c245eda68" />
 
 
-## Percobaan 2
+### Percobaan 2
 
 Code
 ```
@@ -117,5 +117,52 @@ Output
 
 Code
 ```
+package jobsheet3;
 
+public class Anggota {
+    private String nama;
+    private String alamat;
+    private float simpanan;
+
+    public void setNama(String nama){
+        this.nama = nama;
+    }
+    public void setAlamat(String alamat){
+        this.alamat = alamat;
+    }
+    public String getNama(){
+        return nama;
+    }
+    public String getAlamat(){
+        return alamat;
+    }
+    public float getSimpanan(){
+        return simpanan;
+    }
+    public void setor(float uang){
+        simpanan += uang;
+    }
+    public void pinjam(float uang){
+        simpanan -= uang;
+    }
+}
+```
+```
+package jobsheet3;
+
+public class KoperasiDemo {
+    public static void main(String[] args) {
+        Anggota anggota1 = new Anggota();
+        anggota1.setNama("Iwan Setiawan");
+        anggota1.setAlamat("Jalan sukarno Hattta no 10");
+        anggota1.setor(100000);
+        System.out.println("Simpanan " +anggota1.getNama()+ " : Rp " +anggota1.getSimpanan());
+
+        anggota1.pinjam(5000);
+        System.out.println("Simpanan " +anggota1.getNama()+ " : Rp " +anggota1.getSimpanan());
+    }
+}
+```
+
+Output
 
