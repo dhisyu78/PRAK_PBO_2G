@@ -166,3 +166,4 @@ public class KoperasiDemo {
 
 Output
 
+<img width="345" height="56" alt="image" src="https://github.com/user-attachments/assets/c1cc80eb-3c14-4c92-bd11-ae3128df28ec" />
