@@ -193,3 +193,25 @@ Output
 
 <img width="361" height="76" alt="image" src="https://github.com/user-attachments/assets/a93b6025-7500-4f48-afe6-515a4e917640" />
 
+```
+package jobsheet3;
+
+public class KoperasiDemo {
+    public static void main(String[] args) {
+        Anggota anggota1 = new Anggota("Iwan Setiawan", "jalan Mawar");
+        System.out.println("Simpanan " +anggota1.getNama()+ " : Rp " +anggota1.getSimpanan());
+
+        anggota1.setNama("Iwan Setiawan");
+        anggota1.setAlamat("Jalan sukarno Hattta no 10");
+        anggota1.setor(100000);
+        System.out.println("Simpanan " +anggota1.getNama()+ " : Rp " +anggota1.getSimpanan());
+
+        anggota1.pinjam(5000);
+        System.out.println("Simpanan " +anggota1.getNama()+ " : Rp " +anggota1.getSimpanan());
+    }
+}
+```
+
+Output
+
+<img width="364" height="76" alt="image" src="https://github.com/user-attachments/assets/66aec0b3-7b0a-4d9a-a7d5-fcfabb016cf3" />
