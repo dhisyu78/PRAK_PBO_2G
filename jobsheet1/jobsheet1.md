@@ -14,6 +14,10 @@ Setelah Roadbike
 <img width="245" height="221" alt="WhatsApp Image 2026-08-31 at 20 00 27" src="https://github.com/user-attachments/assets/fc8456ac-b87e-4ada-b2d8-eeb49df37e3c" />
 
 
+
+
+
+
 Hasil praktikum
 
 
