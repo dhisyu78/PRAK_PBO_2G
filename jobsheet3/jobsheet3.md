@@ -2,7 +2,7 @@ NAMA : YUDHISTIRA ANDHIKA HERMAWANTO
 KELAS : TI-2G
 NIM :
 
-##Percobaan 1
+### Percobaan 1
 
 Code 
 ```
@@ -42,7 +42,7 @@ Output
 <img width="342" height="126" alt="image" src="https://github.com/user-attachments/assets/144cec13-92e3-48bc-b2b5-0f2c245eda68" />
 
 
-##Percobaan 2
+## Percobaan 2
 
 Code
 ```
@@ -111,4 +111,11 @@ public class MotorDemo {
 ```
 
 Output
+<img width="412" height="317" alt="image" src="https://github.com/user-attachments/assets/21ea7bfc-df1e-44b2-9ee5-8421fcda8d94" />
+
+### Percobaan 3
+
+Code
+```
+
 
