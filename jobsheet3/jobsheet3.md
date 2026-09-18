@@ -215,3 +215,36 @@ public class KoperasiDemo {
 Output
 
 <img width="364" height="76" alt="image" src="https://github.com/user-attachments/assets/66aec0b3-7b0a-4d9a-a7d5-fcfabb016cf3" />
+
+
+### Pertanyaan percobaan 3&4
+
+1. -Getter adalah metode yang dipakai untuk membaca atau mengambil nilai dari suatu properti yang bersifat privat.
+   -Setter adalah adalah metode yang dipakai untuk mengubah atau mengisi nilai ke dalam suatu properti yang bersifat privat.
+2. Untuk melihat atau mengambi nilai simpanan anggota
+3. Mehod setor()
+4. Konstruktor adalah method khusus yang otomatis dijalankan saat objek dibuat
+5. Nama konstruktor harus sama dengan nama class, tidak memiliki tipe return, dan tidak boleh menggunakan abstract, static, final, atau synchronized
+6. Boleh, untuk membatasi pembuatan objek dari luar class
+7. Saat objek membutuhkan nilai tertentu ketika pertama kali dibuat
+8. Inisialisasi adalah memberikan nilai pada atribut, sedangkan instansiasi adalah membuat objek dari class
+9. Method dibuat di dalam class, sedangkan method tidak perlu diinstansiasi dan cukup dipanggil saat dibutuhkan
+
+### Tugas
+
+1. <img width="342" height="59" alt="image" src="https://github.com/user-attachments/assets/879dc849-cc6a-4f91-b1f6-7012ce71fc0f" />
+
+2. Karena ada method steAge
+3. atribut age dapat diberi nilai maksimal 30 dan minimal 18
+   ```
+   public void setAge(int newAge){
+        if (newAge > 30) {
+            age = 30;
+        }else if (newAge < 18) {
+            age = 18;
+        }else {
+            age = newAge;
+        }
+    }
+   ```
+4. 
