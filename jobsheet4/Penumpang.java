@@ -1,7 +1,7 @@
 package jobsheet4;
 
 public class Penumpang {
-    
+
     private String ktp;
     private String nama;
 
