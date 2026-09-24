@@ -247,4 +247,245 @@ Output
         }
     }
    ```
-4. 
+4. Membuat sistem penyimanan logistik
+
+code
+```
+package jobsheet3;
+import java.util.Scanner;
+
+public class TestLogistik {
+
+    public static void main(String[] args) {
+
+        Kontainer kontainerAlfa =
+            new Kontainer("REQ-9988", "PT. Maju Bersama", 5000);
+
+        System.out.println(
+            "Nama Pemilik Kontainer: "
+            + kontainerAlfa.getNamaPemilik()
+        );
+
+        System.out.println(
+            "Kapasitas Maksimal: "
+            + kontainerAlfa.getKapasitasMaksimal()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMemasukkan muatan baru seberat 6.000 kg..."
+        );
+
+        kontainerAlfa.tambahMuatan(6000);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMemasukkan muatan baru seberat 4.000 kg..."
+        );
+
+        kontainerAlfa.tambahMuatan(4000);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMembongkar muat/menurunkan barang seberat 500 kg..."
+        );
+
+        kontainerAlfa.turunkanMuatan(500);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMembongkar muat/menurunkan barang seberat 1.500 kg..."
+        );
+
+        kontainerAlfa.turunkanMuatan(1500);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+    }
+}
+```
+Output:
+<img width="418" height="288" alt="image" src="https://github.com/user-attachments/assets/5012fe6f-94d6-40a5-91a7-de2fb30d3f84" />
+
+5.Menurunkan 50% dari muatan
+
+code
+```
+package jobsheet3;
+
+public class TestLogistik {
+
+    public static void main(String[] args) {
+
+        Kontainer kontainerAlfa =
+            new Kontainer("REQ-9988", "PT. Maju Bersama", 5000);
+
+        System.out.println(
+            "Nama Pemilik Kontainer: "
+            + kontainerAlfa.getNamaPemilik()
+        );
+
+        System.out.println(
+            "Kapasitas Maksimal: "
+            + kontainerAlfa.getKapasitasMaksimal()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMemasukkan muatan baru seberat 4.000 kg..."
+        );
+
+        kontainerAlfa.tambahMuatan(4000);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMembongkar muatan seberat 1.500 kg..."
+        );
+
+        kontainerAlfa.turunkanMuatan(1500);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        System.out.println(
+            "\nMembongkar muatan seberat 1.500 kg..."
+        );
+
+        kontainerAlfa.turunkanMuatan(1500);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+    }
+}
+```
+
+Output:
+<img width="791" height="229" alt="image" src="https://github.com/user-attachments/assets/8a1171ff-b742-4d66-9952-6757494f2f4a" />
+
+6.
+code
+```
+package jobsheet3;
+import java.util.Scanner;
+
+public class TestLogistik {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        Kontainer kontainerAlfa =
+            new Kontainer("REQ-9988", "PT. Maju Bersama", 5000);
+
+        System.out.println("=== SISTEM LOGISTIK KONTAINER ===");
+
+        System.out.println(
+            "Nama Pemilik Kontainer: "
+            + kontainerAlfa.getNamaPemilik()
+        );
+
+        System.out.println(
+            "Kapasitas Maksimal: "
+            + kontainerAlfa.getKapasitasMaksimal()
+            + " kg"
+        );
+
+        // Input tambah muatan
+        System.out.print(
+            "\nMasukkan berat muatan yang ingin ditambahkan (kg): "
+        );
+
+        double beratTambah = input.nextDouble();
+
+        kontainerAlfa.tambahMuatan(beratTambah);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        // Input tambah muatan kedua
+        System.out.print(
+            "\nMasukkan berat muatan tambahan (kg): "
+        );
+
+        double beratTambah2 = input.nextDouble();
+
+        kontainerAlfa.tambahMuatan(beratTambah2);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        // Input turunkan muatan
+        System.out.print(
+            "\nMasukkan berat muatan yang ingin diturunkan (kg): "
+        );
+
+        double beratTurun = input.nextDouble();
+
+        kontainerAlfa.turunkanMuatan(beratTurun);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        // Input turunkan muatan kedua
+        System.out.print(
+            "\nMasukkan berat muatan yang ingin diturunkan lagi (kg): "
+        );
+
+        double beratTurun2 = input.nextDouble();
+
+        kontainerAlfa.turunkanMuatan(beratTurun2);
+
+        System.out.println(
+            "Berat muatan saat ini: "
+            + kontainerAlfa.getBeratMuatanSaatIni()
+            + " kg"
+        );
+
+        input.close();
+    }
+}
+```
+
+
+Output:
+<img width="805" height="301" alt="image" src="https://github.com/user-attachments/assets/d47ea700-6eae-428a-9d30-0d6407090893" />
+
+
