@@ -323,6 +323,8 @@ public class TestLogistik {
 }
 ```
 Output:
+
+
 <img width="418" height="288" alt="image" src="https://github.com/user-attachments/assets/5012fe6f-94d6-40a5-91a7-de2fb30d3f84" />
 
 5.Menurunkan 50% dari muatan
@@ -389,6 +391,8 @@ public class TestLogistik {
 ```
 
 Output:
+
+
 <img width="791" height="229" alt="image" src="https://github.com/user-attachments/assets/8a1171ff-b742-4d66-9952-6757494f2f4a" />
 
 6.
@@ -486,6 +490,46 @@ public class TestLogistik {
 
 
 Output:
+
+
 <img width="805" height="301" alt="image" src="https://github.com/user-attachments/assets/d47ea700-6eae-428a-9d30-0d6407090893" />
 
+7. Sistem tiket bioskop
+code
+```
+public class TestBioskop {
+
+    public static void main(String[] args) {
+
+        Tiket tiket1 =
+            new Tiket("Avengers: Endgame", -50000);
+
+        System.out.println(
+            "Film: " + tiket1.getJudulFilm()
+        );
+
+        System.out.println(
+            "Harga Tiket: " + tiket1.getHargaDasar()
+        );
+
+        System.out.println(
+            "Status Lunas: "
+            + tiket1.isStatusPembayaran()
+        );
+
+        System.out.println("\nMemproses pembayaran...");
+
+        tiket1.lakukanPembayaran();
+
+        System.out.println(
+            "Status Lunas Terbaru: "
+            + tiket1.isStatusPembayaran()
+        );
+    }
+}
+```
+
+Output
+
+<img width="367" height="124" alt="image" src="https://github.com/user-attachments/assets/221c46b3-43f0-4e63-8577-59b5d7b94661" />
 
