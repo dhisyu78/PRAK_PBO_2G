@@ -56,3 +56,25 @@ Output:
 
 5.Iya,karena dua objek pegawai yg berbeda
 
+### PERCOBAAN 4
+Output:
+
+<img width="379" height="204" alt="image" src="https://github.com/user-attachments/assets/6945948f-b456-4c46-9fd9-8127ef6c231c" />
+
+### Jawaban pertanyaan prcobaan 4
+
+1.10 kursi
+
+2.digunakan untuk mengecek apakah kursi sudah memiliki penumpang.
+
+3.Karena nomor kursi dimulai dari 1, sedangkan index array Java dimulai dari 0.
+
+4.Penumpang pada kursi 1 akan diganti dari Mr. Krab menjadi Budi,Jadi nilai penumpang yang sebelumnya menunjuk ke Mr. Krab sekarang menunjuk ke Budi.
+
+5.Array digunakan karena Gerbong memiliki banyak Kursi dengan jumlah yang dapat berbeda-beda.
+
+6.Array untuk banyak objek sejenis; atribut satu per satu untuk objek yang memiliki role berbeda.
+
+7.Gerbong yang membuat Kursi, sehingga Composition, dan Penumpang dibuat di luar Kursi, sehingga Aggregation
+
+### PERCOBAAN 5
