@@ -1,27 +1,32 @@
 package jobsheet3;
 
 public class Kontainer {
+
     private String nomorResi;
-    private  String namaPemilik;
+    private String namaPemilik;
     private double kapasitasMaksimal;
     private double beratMuatanSaatIni;
 
-    Kontainer (String nomorResi, String namaPemilik, double kapasitasMaksimal){
+    public Kontainer(
+        String nomorResi,
+        String namaPemilik,
+        double kapasitasMaksimal
+    ) {
         this.nomorResi = nomorResi;
         this.namaPemilik = namaPemilik;
         this.kapasitasMaksimal = kapasitasMaksimal;
-        beratMuatanSaatIni = 0;
+        this.beratMuatanSaatIni = 0;
     }
 
-    public String getNomorResi(){
+    public String getNomorResi() {
         return nomorResi;
     }
 
-    public String getNamaPemilik(){
+    public String getNamaPemilik() {
         return namaPemilik;
     }
 
-    public double getKapasitasMaksimal(){
+    public double getKapasitasMaksimal() {
         return kapasitasMaksimal;
     }
 
@@ -30,18 +35,58 @@ public class Kontainer {
     }
 
     public void tambahMuatan(double berat) {
-        if (beratMuatanSaatIni + berat <= kapasitasMaksimal) {
-            beratMuatanSaatIni += berat;
+
+        if (berat <= 0) {
+
+            System.out.println(
+                "Maaf, berat muatan harus lebih dari 0 kg."
+            );
+
+        } else if (beratMuatanSaatIni + berat > kapasitasMaksimal) {
+
+            System.out.println(
+                "Maaf, berat muatan melebihi kapasitas maksimal kontainer."
+            );
+
         } else {
-            System.out.println("Maaf, berat muatan melebihi kapasitas maksimal kontainer.");
+
+            beratMuatanSaatIni += berat;
         }
     }
 
     public void turunkanMuatan(double berat) {
-        if (berat <= beratMuatanSaatIni) {
-            beratMuatanSaatIni -= berat;
-        } else {
-            System.out.println("Maaf, berat muatan yang diturunkan melebihi muatan saat ini.");
+
+        if (berat <= 0) {
+
+            System.out.println(
+                "Maaf, berat muatan yang diturunkan harus lebih dari 0 kg."
+            );
+
+            return;
         }
+
+        if (berat > beratMuatanSaatIni) {
+
+            System.out.println(
+                "Maaf, berat yang diturunkan melebihi muatan saat ini."
+            );
+
+            return;
+        }
+
+        // Batas maksimal 50% dari muatan saat ini
+        double batasPembongkaran = beratMuatanSaatIni * 0.50;
+
+        if (berat > batasPembongkaran) {
+
+            System.out.println(
+                "Maaf, demi keselamatan, pembongkaran muatan satu kali "
+                + "jalan tidak boleh melebihi 50% dari muatan saat ini!"
+            );
+
+            return;
+        }
+
+        beratMuatanSaatIni -= berat;
     }
 }
