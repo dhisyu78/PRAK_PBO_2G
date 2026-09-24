@@ -38,3 +38,21 @@ Output:
 6.Pertama p.getMobil() mengambil objek Mobil dari pelanggan. Setelah itu getMerk() dipanggil untuk mengambil merk mobil tersebut
 
 7.Akan terjadi NullPointerException saat hitungBiayaTotal() dijalankan karena mobil masih bernilai null
+
+### PERCOBAAN 3
+Output:
+
+<img width="345" height="181" alt="image" src="https://github.com/user-attachments/assets/d6206aa6-355d-44b7-9c7e-0cc06f2de5ae" />
+
+### Jawaban pertanyaan prcobaan 3
+
+1.Digunakan untuk memanggil method info() dari masing-masing objek Pegawai yang berperan sebagai masinis dan asisten.
+
+2.Program mengalami NullPointerException. Penyebabnya adalah constructor tiga parameter tidak mengisi asisten, sehingga asisten masih null
+
+3.Berisi null
+
+4.Tidak,karena kedua constructor selalu menerima masinis
+
+5.Iya,karena dua objek pegawai yg berbeda
+
