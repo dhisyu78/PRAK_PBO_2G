@@ -1,4 +1,4 @@
-package jobsheet4;
+package jobsheet4.percobaan4;
 
 public class Kursi {
 

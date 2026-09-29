@@ -1,4 +1,4 @@
-package jobsheet4;
+package jobsheet4.percobaan2;
 
 public class MainPercobaan2 {
 

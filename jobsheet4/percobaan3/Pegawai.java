@@ -1,4 +1,4 @@
-package jobsheet4;
+package jobsheet4.percobaan3;percobaan3;
 
 public class Pegawai {
     private String nip;

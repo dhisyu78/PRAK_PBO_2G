@@ -1,4 +1,4 @@
-package jobsheet4;
+package jobsheet4.percobaan3;
 
 public class KeretaApi {
 

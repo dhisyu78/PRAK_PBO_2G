@@ -1,7 +1,7 @@
-package jobsheet4;
+package jobsheet4.percobaan2;
 
 public class Mobil {
-
+    
     private String merk;
     private int biaya;
 
