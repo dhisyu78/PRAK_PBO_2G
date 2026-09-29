@@ -104,3 +104,55 @@ Output
 5. -Aggregation: objek bagian disimpan sebagai atribut, tetapi objek tersebut dibuat dari luar class pemilik.
    -Composition: objek bagian disimpan sebagai atribut dan dibuat langsung oleh class pemilik.
    -Dependency: objek tidak disimpan sebagai atribut, tetapi hanya digunakan sementara, biasanya melalui parameter method
+
+### TUGAS MANDIRI
+1. -Agregation Perpustakaan dan Anggota
+   Kode
+   ```
+   private Anggota anggota;
+   ```
+   Dan
+   ```
+   public Perpustakaan(String nama, Anggota anggota) {
+    this.nama = nama;
+    this.anggota = anggota;
+   }
+   ```
+   Alasan:Objek Anggota dibuat di luar class Perpustakaan, kemudian diberikan kepada Perpustakaan melalui constructor.
+
+   -Composition — Perpustakaan dan KartuAnggota
+   Kode
+   ```
+   private KartuAnggota kartuAnggota;
+   ```
+   Dan
+   ```
+   this.kartuAnggota = new KartuAnggota(
+    anggota.getNomorAnggota()
+   );
+   ```
+   Alasan:Objek KartuAnggota dibuat langsung oleh Perpustakaan menggunakan new.
+   Tidak ada objek KartuAnggota yang dibuat di Main.
+
+   -Dependency — Perpustakaan dan Laporan
+   Kode
+   ```
+   public void cetakLaporan(Laporan laporan) {
+    laporan.cetak(nama, anggota.getNama());
+   }
+   ```
+   Laporan hanya digunakan sebagai parameter method.
+   Perpustakaan tidak mempunyai:
+   ```
+   private Laporan laporan;
+   ```
+   Jadi Perpustakaan hanya menggunakan Laporan ketika method:
+   ```
+   cetakLaporan()
+   ```
+   dipanggil.
+
+2.Dalam menentukan jenis relasi antar class, hal pertama yang perlu diperhatikan adalah apakah objek dari class lain disimpan sebagai atribut atau hanya digunakan sementara melalui parameter method. Jika objek disimpan sebagai atribut dan dibuat dari luar class utama, maka relasinya termasuk Aggregation. Jika objek dibuat langsung oleh class utama menggunakan new dan menjadi bagian yang dimiliki oleh class tersebut, maka relasinya termasuk Composition. Sedangkan jika objek hanya digunakan sementara melalui parameter method dan tidak disimpan sebagai atribut, maka relasinya termasuk Dependency.
+Output
+
+<img width="350" height="265" alt="image" src="https://github.com/user-attachments/assets/34ef8f4b-58b6-4aa7-ad11-2767e579d8ab" />
