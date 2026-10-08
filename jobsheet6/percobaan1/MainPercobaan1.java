@@ -1,4 +1,6 @@
-package jobsheet6;
+package jobsheet6.percobaan1;
+
+import jobsheet6.ClassB;
 
 public class MainPercobaan1 {
 
